@@ -5,7 +5,7 @@ const Profile = () => {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    fetch('https://def6768784d8e5a0.mokky.dev/users/1')
+    fetch('http://localhost:3001/api/users')
       .then(response => response.json())
       .then(data => setUser(data))
       .catch(error => console.error('Error fetching users:', error));
